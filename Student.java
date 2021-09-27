@@ -33,9 +33,6 @@ public class Student { // родительский класс
                 this.avgMark = avgMark;
 		this.work = work;
 	}
-	void print() {
-		System.out.println(firstName);
-	}
 	public double getScholarship() {
 		return avgMark == 5 ? 200 : 180; // переопределение метода getScholarship() в классе Aspirant
 	}
