@@ -3,13 +3,13 @@ package practicalwork2.pkg1;
 public class Student { // родительский класс
     String firstName, lastName, group;
 	double avgMark;
-	public Student (String firstName, String lastName, String group, double avgMark) { // конструктор
+	public Student (String firstName, String lastName, String group, double avgMark) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.group = group;
 		this.avgMark = avgMark;
 	}
-	public Student(){ //конструктор
+	public Student(){
 	}
 	public double getScholarship() { // метод возвращает сумму стипендии
 		return avgMark == 5 ? 100 : 80;
@@ -26,7 +26,7 @@ public class Student { // родительский класс
 }
  class Aspirant extends Student { // наследуемый от Student класс
 	String work;
-	public Aspirant (String firstName, String lastName, String group, double avgMark, String work) { // конструктор
+	public Aspirant (String firstName, String lastName, String group, double avgMark, String work) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.group = group;
