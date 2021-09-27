@@ -9,7 +9,7 @@ public class Student { // родительский класс
 		this.group = group;
 		this.avgMark = avgMark;
 	}
-	public Student(){
+	public Student(){ // конструктор "по-умолчанию" без которого не создаются объекты по типу Student student = new Student и пр., т.к. класс должен содержать конструктор
 	}
 	public double getScholarship() { // метод возвращает сумму стипендии
 		return avgMark == 5 ? 100 : 80;
